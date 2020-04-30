@@ -1,0 +1,645 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #111111;
+}
+
+.bienvenidos {
+    background: url("../images/fondo-encabezado.jpg") no-repeat center top;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed !important;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado {
+    background: #111111;
+    color: white;
+    padding: 0.5rem 0;
+    transition: all .5s ease;
+}
+
+.encabezado.fondo-menu {
+    background: #073d51;
+    padding: 1rem 0;
+}
+
+.encabezado .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.encabezado .logo img {
+    width: 250px;
+    height: 100%;
+}
+
+
+/* Estilos para botones del menu */
+
+.boton-menu,
+.boton-buscar {
+    border: 0;
+    background: transparent;
+    color: white;
+    margin: 0;
+    font-size: 2rem;
+    padding: 0 .5rem;
+}
+
+.boton-menu:focus,
+.boton-buscar:focus {
+    outline: 0px;
+}
+
+.boton-buscar {
+    margin-left: auto;
+    margin-right: .8rem;
+}
+
+#bloque-buscar {
+    flex: 1 1 100%;
+}
+
+.contenedor-bloque-buscar {
+    display: flex;
+    height: 3rem;
+    margin: 1rem 0;
+}
+
+.contenedor-bloque-buscar input[type="text"] {
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    padding: 1rem;
+    flex: 1 1 auto;
+}
+
+.contenedor-bloque-buscar input[type="submit"] {
+    flex: 0 1 auto;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background-color: #0088bc;
+    color: white;
+    padding: 0 1rem;
+}
+
+#menu-principal {
+    flex: 1 1 100%;
+}
+
+#menu-principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+#menu-principal ul a {
+    display: block;
+    padding: .8rem 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    border-top: 1px solid rgb(90, 88, 88);
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #0088bc;
+    border-color: transparent;
+    transition: all .5s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:hover {
+    background-color: #b2801c;
+    border-color: transparent;
+}
+
+#menu-principal ul a:hover,
+#menu-principal ul li.active a {
+    color: #0088bc;
+}
+
+#menu-principal ul a:focus {
+    outline: 0px;
+}
+
+.texto-encabezado {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.texto-encabezado .display-4 {
+    margin-top: 4rem;
+}
+
+.texto-encabezado .btn-primary {
+    margin-top: 1rem;
+}
+
+.flecha-bajar a {
+    display: inline-block;
+    color: white;
+    font-size: 4rem;
+    -webkit-animation: flecha-animada 2s ease-in-out infinite;
+    animation: flecha-animada 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes flecha-animada {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes flecha-animada {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+/*--------------------
+-- Seccion agencia---- 
+--------------------*/
+
+.agencia {
+    background-color: #0088bc;
+    color: white;
+}
+
+.agencia img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.agencia .contenedor-foto-agencia {
+    background-color: white;
+    border-radius: 35%;
+}
+
+
+/*------------------------------
+-- Seccion TU MEJOR ELECCION ---
+------------------------------*/
+
+.tu-mejor-eleccion h2 span {
+    color: #0088bc;
+}
+
+.tu-mejor-eleccion ul,
+.tu-mejor-eleccion ul li {
+    list-style: none;
+}
+
+.tu-mejor-eleccion ul li .fa {
+    font-size: 2.3rem;
+    background: #b2801c;
+    color: white;
+    border-radius: 50%;
+    width: 4.7rem;
+    height: 4.7rem;
+    line-height: 4.7rem;
+}
+
+.tu-mejor-eleccion ul li .contenedor-eleccion h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: .8rem;
+}
+
+.tu-mejor-eleccion ul li {
+    min-height: 9rem;
+}
+
+.tu-mejor-eleccion img {
+    width: 100%;
+}
+
+
+/*--------------------
+-- Seccion Servicios--
+--------------------*/
+
+.servicios {
+    background: url("../images/fondo-servicios.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed !important;
+    color: white;
+}
+
+.servicios article {
+    display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0; 
+}
+
+.servicios article .fa {
+    font-size: 3rem;
+    background: #b2801c;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    line-height: 60px;
+    overflow: hidden;
+    margin-right: 1rem;
+    height: 60px;
+    width: 60px;
+}
+
+.servicios h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    flex: 1 1 auto;
+}
+
+.servicios h3 a {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.servicios h3 a::after {
+    content: "\f054";
+    font-family: FontAwesome;
+    font-size: 2rem;
+    margin-left: 1rem;
+    opacity: .5;
+    position: relative;
+    left: 0;
+    transition: all .5s ease;
+}
+
+.servicios h3 a:hover::after {
+    left: -.5rem;
+    opacity: 1;
+}
+.servicios article p{
+    width: 100%;
+}
+.servicios .btn-primary {
+    margin-top: auto;
+}
+
+
+/*----------------------------
+-- Seccion Ultimos Proyectos--
+----------------------------*/
+
+.ultimos-proyectos a {
+    text-decoration: none;
+}
+
+.ultimos-proyectos h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #111111;
+}
+
+.ultimos-proyectos .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ultimos-proyectos .owl-nav {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.ultimos-proyectos .owl-prev,
+.ultimos-proyectos .owl-next {
+    font-size: 3rem;
+    margin: 0 .5rem;
+    color: #0088bc;
+    transition: all .5s ease;
+}
+
+.ultimos-proyectos .owl-prev:hover,
+.ultimos-proyectos .owl-next:hover {
+    color: #b2801c;
+    ;
+}
+
+
+/*----------------------------
+-- Seccion Pie de Pagina   --
+----------------------------*/
+
+.pie-pagina {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.pie-pagina .redes-sociales {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pie-pagina .redes-sociales a {
+    color: white;
+    font-size: 2rem;
+    margin: 0 .5rem;
+    opacity: .7;
+    transition: all .5s ease;
+}
+
+.pie-pagina .redes-sociales a:hover {
+    opacity: 1;
+}
+
+.ir-arriba {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: #b2801c;
+    z-index: 99999;
+    line-height: 0;
+    display: none;
+    transition: all .5s ease;
+}
+
+.ir-arriba:hover,
+.ir-arriba:focus {
+    outline: 0;
+    color: #0088bc;
+}
+
+
+/*----------------------------
+-- Pagina nosotros  --
+----------------------------*/
+
+.paginas-internas .bienvenidos {
+    height: 50vh;
+}
+
+.paginas-internas .ruta {
+    background: #0088bc;
+    color: white;
+}
+
+.paginas-internas .ruta a {
+    text-decoration: none;
+    color: white;
+}
+
+.paginas-internas .ruta a:hover {
+    text-decoration: underline;
+}
+
+.paginas-internas .panel .panel-heading {
+    font-size: 1.2rem;
+}
+
+.paginas-internas .panel .panel-heading a {
+    background: #0088bc;
+    color: white;
+    display: block;
+    padding: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.paginas-internas .panel .panel-heading a:hover {
+    background: #b2801c;
+    ;
+}
+.paginas-internas aside img {
+width: 100%;}
+
+/*----------------------------
+-- Pagina servicios  --
+----------------------------*/
+
+.paginas-internas .lista-servicios {
+    background: white;
+}
+
+.paginas-internas .lista-servicios .item-servicios {
+    text-align: center;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.paginas-internas .lista-servicios .item-servicios .fa {
+    font-size: 6rem;
+    color: #0088bc;
+    margin-bottom: 1rem;
+    transition: all 1s ease;
+}
+
+.paginas-internas .lista-servicios .item-servicios:hover .fa {
+    transform: rotatey(360deg);
+    transform-style: preserve-3d;
+    color: #b2801c;
+}
+
+.paginas-internas .modal-body .fa {
+    font-size: 110px;
+    background: #b2801c;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    line-height: 164px;
+    overflow: hidden;
+    margin-right: 1rem;
+    height: 160px;
+    width: 160px;
+    margin-top: 1rem;
+}
+
+
+/*----------------------------
+-- Medias Queries   --
+----------------------------*/
+
+@media (min-width:768px) {
+    #menu-principal {
+        height: auto !important;
+        display: block;
+        flex: 0 1 auto;
+        margin-left: auto;
+        order: 1;
+    }
+    #menu-principal ul {
+        display: flex;
+        margin: 0 0 0 0;
+    }
+    #menu-principal ul li a {
+        padding: .8rem;
+        text-transform: capitalize;
+        margin: .3rem;
+        border-top: 0px;
+        border-bottom: 4px solid transparent;
+        transition: all .5s ease;
+    }
+    #menu-principal ul li.active a,
+    #menu-principal ul li a:hover {
+        color: #0088bc;
+        border-bottom: 4px solid;
+    }
+    .boton-buscar {
+        margin-left: 1rem;
+        margin-right: 0;
+        order: 2;
+    }
+    #bloque-buscar {
+        order: 3;
+        position: absolute;
+        width: 3;
+        right: 3rem;
+        top: 2.8rem;
+        transition: all .5s ease;
+    }
+    /*Seccion Servicios*/
+    .servicios article {
+        margin: 1rem 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .servicios article .fa {
+        height: 160px;
+        width: 160px;
+        overflow: hidden;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        transition: all 1s ease;
+        font-size: 110px;
+        line-height: 160px;
+    }
+    .servicios article:hover .fa {
+        transform: rotatey(360deg);
+        transform-style: preserve-3d;
+    }
+    .servicios h3 a::after {
+        content: "";
+    }
+    .servicios h3 {
+        margin: 0 0 .5rem 0;
+        font-size: 1.5rem;
+        flex: 0 1 auto;
+    }
+    .servicios h3 a {
+        display: block;
+        width: 100%;
+    }
+    .servicios h3 p {
+        width: 100%;
+    }
+    .servicios .btn-secondary {
+        margin-top: auto;
+    }
+    /*Pagina servicios*/
+    .paginas-internas .lista-servicios .item-servicios {
+        display: flex;
+        flex-direction: column;
+    }
+    .paginas-internas .lista-servicios .item-servicios .btn-primary {
+        margin-top: auto;
+    }
+}
+
+@media (min-width:992px) {
+    html {
+        font-size: 16px;
+    }
+    .bienvenidos {
+        background: url("../images/fondo-encabezado-grande.jpg") no-repeat center top;
+        background-size: cover;
+    }
+    .tu-mejor-eleccion ul li {
+        min-height: 7rem;
+        display: flex;
+    }
+    .tu-mejor-eleccion ul li .fa {
+        text-align: center;
+        flex: 0 1 auto;
+        margin-right: 1rem;
+        transition: all 1s ease;
+    }
+    .contenedor-eleccion {
+        flex: 1 0 0px;
+    }
+    .tu-mejor-eleccion ul li .contenedor-eleccion h4 {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    .tu-mejor-eleccion ul:first-child .fa {
+        order: 1;
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+    .tu-mejor-eleccion ul li p {
+        font-size: .85rem;
+    }
+    .tu-mejor-eleccion ul li:hover .fa {
+        transform: rotatey(360deg);
+        transform-style: preserve-3d;
+        background-color: #0088bc;
+    }
+    .servicios {
+        background: url("../images/fondo-servicios-grande.jpg") no-repeat center center;
+        background-size: cover;
+    }
+    .paginas-internas .modal-body .fa {
+        margin-top: 0px;
+    }
+}
